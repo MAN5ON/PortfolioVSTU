@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    background-color: #ffffff;
+}
+
+* :before,
+* :after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: underline;
+    color: #2a323b !important;
+}
+
+.uslugi {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Caveat', cursive;
+    color: #2a323b;
+}
+
+.intro {
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.back_img h2 {
+    padding-top: 50px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.backbutton {
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    right: 150px;
+    z-index: 99999;
+}
+
+.header {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Caveat', cursive;
+    color: #2b2b2b;
+    font-weight: 500;
+    line-height: 1.3;
+
+}
+
+.header p {
+    text-align: left;
+    font-size: 50px;
+
+}
+
+.stlviewer {
+    padding: 10px;
+}
+
+.viewer {
+    text-align: center;
+}
+
+.head {
+    font-family: 'Caveat', cursive;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.zg {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    color: #2b2b2b;
+    text-align: justify;
+    line-height: 1.3;
+    font-size: 25px;
+    font-weight: 300;
+
+}
+
+.zgi {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+}
+
+.texti {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #2b2b2b;
+    line-height: 1.3;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.start p {
+    text-align: center;
+}
+
+.start img {
+    width: 1200px;
+}
+
+.stlviewer {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border: 1px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    overflow: hidden;
+    height: 800px;
+    width: 500px;
+}
+
+.images {
+    text-align: center;
+}
+
+.house_img1, .house_img2 {
+    height: 800px;
+}
+
+.frog1, .frog2 {
+    height: 420px;
+}
+
+.skull_img {
+    width: 1200px;
+}
+
+.akry_img {
+    width: 1200px;
+}
+
+.arena_img, .arena_img2 {
+    height: 530px;
+}
+
+.award_img {
+    width: 1200px;
+}
+
+.boy2_img2 {
+    width: 1200px;
+}
+
+.per_img, .per_img2, .per_img3 {
+    height: 450px;
+}
+
+.rev_img, .rev_img2, .rev_img3 {
+    width: 400px;
+}
+
+.basement {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2a323b;
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.basement h1 {
+    padding-top: 15px;
+    font-weight: 300;
+    font-size: 60px;
+    text-align: center;
+}
+
+.basement iframe {
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 50px;
+}
+
+.basement a {
+    color: #bde0ff !important;
+}
+
+.contact img {
+    width: 250px;
+}
+
+.linkvk {
+    text-align: center;
+}

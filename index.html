@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/f580305ab6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" type="text/javascript"></script>
+    <script src="./js/scroll.js" type="text/javascript"></script>
+    <script src="./js/STLviewer.js" type="module"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:wght@300;500&family=Rubik+Mono+One&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./Style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <title>Каталог услуг</title>
+</head>
+<body>
+<div class="container">
+    <a class="backbutton" href="#start"><i class="fas fa-arrow-circle-up fa-10x" style="color: #7fc7ff"></i> </a>
+</div>
+<div class="container">
+    <div class="start" id="start">
+        <p><a href="http://cmit.vstu.ru/"><img src="./img/luk.png" alt="ССЫЛКА НА ГЛАВНЫЙ САЙТ"></a></p>
+    </div>
+
+    <div class="header">
+        <p>Это площадка, на которой собран комплект уникального оборудования и специализированного программного
+            обеспечения (ПО) для быстрого прототипирования и мелкосерийного производства.</p>
+    </div>
+    <div class="text">
+        <p class="intro">
+            На этой странице вы найдете информацию о предоставляемых услугах:<br>
+            <a href="#models">3D Моделировании и Печати</a>, <a href="#frez">Обработке на токарно-фрезерном станке</a>,
+            <a href="#gravy">Гравировке</a> а также об <a href="#learning"> Обучении работе на оборудовании</a>.
+            <br>Кроме этого, вы можете увидеть наше <a href="#examples">Портфолио с описанием каждого проекта</a>.
+            <br>Дополнительная информация и связь с нами <a href="#basement">Здесь</a>.
+        </p>
+    </div>
+</div>
+<div class="uslugi">
+    <h2>Предоставляемые услуги ЦМИТ ЛЮКС:</h2>
+</div>
+<div class="container">
+    <div class="models" id="models">
+        <p class="header">3D Моделирование и Печать</p>
+        <p class="zg">СТОИМОСТЬ 3D МОДЕЛИРОВАНИЯ</p>
+        <p class="text">зависит от сложности, физических размеров, детализации изделия и методов создания.</p>
+        <p class="zg">СОЗДАНИЕ 3D МОДЕЛИ</p>
+        <p class="text">с использованием 3D сканеров - от 300 руб. Время создания от 10 минут до нескольких часов.</p>
+        <p class="zg">СТОИМОСТЬ 3D ПЕЧАТИ</p>
+        <p class="text">зависит от типа пластика, качества печати, массы изготавливаемых изделий. При оформлении
+            комплексного заказа, включающего создание 3D модели и ее печать на 3D принтере, предоставляется
+            дополнительная скидка на 3D моделирование и 3D печать.</p>
+        <table>
+            <tr>
+                <td>Высота слоя(качество)</td>
+                <td>Цена(обычный пластик)</td>
+                <td>Масса изделий</td>
+                <td>Скидка</td>
+            </tr>
+            <tr>
+                <td>0,3 мм (нормальное)</td>
+                <td>10 руб/г</td>
+                <td>100 г.</td>
+                <td>3%</td>
+            </tr>
+            <tr>
+                <td>0,2 мм (хорошее)</td>
+                <td>15 руб/г</td>
+                <td>200 г.</td>
+                <td>6%</td>
+            </tr>
+            <tr>
+                <td>0,1 мм (отличное)</td>
+                <td>25 руб/г</td>
+                <td>500 г.</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>0,05 мм (наилучшее)</td>
+                <td>45 руб/г</td>
+                <td>от 900 г. и больше</td>
+                <td>30%</td>
+            </tr>
+        </table>
+        <p class="zg">РЕВЕРСИНЖИРИНГ</p>
+        <p class="text">создание модели существующей детали и печать новой детали. Стоимость разработки червячной
+            передачи включая разработку модели и печать - 750 руб.</p>
+        <p class="zg">ПЕЧАТЬ СВОЕЙ 3D МОДЕЛИ</p>
+        <p class="text">выполняется на заказ. Для этого сохраните её в формате STL.(Для проверки формата воспользуйтесь
+            встроенным STL viewer'ом. Если модель загрузится и удачно отобразится, значит всё в порядке)</p>
+
+        <!-- THREE.JS -->
+        <div class="your_model" id="stlviewer">
+            <p class="header">STL Viewer</p>
+            <form class=viewer>
+                <input id="input" type="file" accept=".stl">
+            </form>
+            <canvas id="viewer"></canvas>
+        </div>
+
+        <div class="frez" id="frez">
+            <p class="header">Обработка на токарно-фрезерном станке</p>
+            <p class="zg">СТОИМОСТЬ ОБРАБОТКИ НА ТОКАРНО-ФРЕЗЕРНОМ СТАНКЕ</p>
+            <p class="text">зависит от времени и качества обработки. При оформлении комплексного заказа, включающего
+                создание 3D модели и ее резку на станке, предоставляется дополнительная скидка на 3D моделирование и
+                резку.</p>
+            <table>
+                <tr>
+                    <td>Толщина фрезы</td>
+                    <td>Цена (экспресс резка)</td>
+                    <td>Цена (обычная резка)</td>
+                </tr>
+                <tr>
+                    <td>5мм (нормальное)</td>
+                    <td>600 руб/ч</td>
+                    <td>500 руб/ч</td>
+                </tr>
+                <tr>
+                    <td>3мм (хорошее)</td>
+                    <td>850 руб/ч</td>
+                    <td>700 руб/ч</td>
+                </tr>
+                <tr>
+                    <td>2мм (высокое)</td>
+                    <td>1000 руб/ч</td>
+                    <td>800 руб/ч</td>
+                </tr>
+                <tr>
+                    <td>1мм (наилучшее)</td>
+                    <td>1250 руб/ч</td>
+                    <td>1000 руб/ч</td>
+                </tr>
+            </table>
+            <p class="zg">ЧЕРЕВИЧНАЯ ПЕРЕДАЧА</p>
+            <p class="text">Дерево. Токарно-фрезерная обработка. Стоимость 500 рублей за штуку.</p>
+        </div>
+        <div class="gravy" id="gravy">
+            <p class="header">Гравировка</p>
+            <p class="zg">ПЕРСОНИФИЦИРОВАННАЯ ГРАВИРОВКА</p>
+            <p class="text">выполним гравировку рисунка, надписи на любой поверхности (кожа, дерево, картон, оргстекло,
+                пластик).
+                <br>Стоимость от 250 руб.</p>
+            <p class="zg">ВАШИ ЛОГОТИПЫ "АКРИЛАЙТ"</p>
+            <p class="text">печать корпуса, гравировка логотипа, электронная начинка (возможно дистанционное управление
+                контроллером). Стоимость от 2500 рублей.</p>
+
+        </div>
+        <div class="learning" id="learning">
+            <p class="header">Обучение работе на оборудовании</p>
+            <p class="zg">3D ПРИНТЕР VOLGOBOT FFF1.4</p>
+            <p class="text">Обучение: 1000р. (2 часа) / После обучения: 100р./час</p>
+            <p class="zg">РЕЖУЩИЙ ПЛОТТЕР HEWLETT PACKARD DESIGNJET 430</p>
+            <p class="text">Обучение: 600р. (1 час) / После обучения: 100р./час</p>
+            <p class="zg">ТОКАРНО-ФРЕЗЕРНЫЙ ЧПУ СТАНОК ROLAND MDX-40A</p>
+            <p class="text">Обучение: 2000р. (3 часа) / После обучения: 200р./час</p>
+            <p class="zg">ЛАЗЕРНЫЙ РЕЗАК RABBIT HX-1610SC С ПОВОРОТНОЙ ОСЬЮ</p>
+            <p class="text">Обучение: 1000р. (1 час) / После обучения: 200р./час</p>
+            <p class="zg">НЕЙРОИНТЕРФЕЙС NEUROSKY MINDWAVE MOBILE STARTER KIT</p>
+            <p class="text">Обучение: 1000р. (1 час) / После обучения: 200р./час</p>
+        </div>
+
+    </div>
+
+    <div class="examples" id="examples">
+        <div class="uslugi">
+            <h2>Примеры выполненных проектов:</h2>
+        </div>
+        <!-- Высотка -->
+        <p class="zgi">Модель высотного корпуса ВолгГТУ</p>
+        <p class="images">
+            <img class="house_img1" src="./img/house.png">
+            <img class="house_img2" src="./img/house2.png"/>
+        </p>
+        <p class="texti">
+            Печать на 3d принтере VolgoBot FFF1.4<br>
+            Размер: 249х70х115 мм<br>
+            Масса: 270 гр<br>
+            (Стоимость моделирования и печати 1500 рублей в зависимости от размера и сложности модели)
+        </p>
+
+        <!-- Жаба -->
+        <p class="zgi">Древесная лягушка</p>
+        <p class="images">
+            <img class="frog1" src="./img/frog.png">
+            <img class="frog2" src="./img/frog2.png"/>
+        </p>
+        <p class="texti">
+            3D печать Raise3D Pro2 Plus<br>
+            Высота слоя: 0.3 мм<br>
+            Размер: 105х115х50 мм<br>
+            Масса: 54 гр<br>
+            Особенности: печать двумя экструдерами<br>
+            Стоимость 600 руб.
+        </p>
+
+        <!-- Черепа -->
+        <p class="zgi">Черепа</p>
+        <p class="images">
+            <img class="skull_img" src="./img/skull.png">
+        </p>
+        <table>
+            <tr>
+                <td>Черный череп</td>
+                <td>Белый череп</td>
+            </tr>
+            <tr>
+                <td>3D печать Raise3D Pro2 Plus</td>
+                <td>3D печать Raise3D Pro2 Plus</td>
+            </tr>
+            <tr>
+                <td>Высота слоя: 0.3 мм</td>
+                <td>Высота слоя: 0.3 мм</td>
+            </tr>
+            <tr>
+                <td>Размер: 70х60х50 мм</td>
+                <td>Размер: 260х200х180 мм</td>
+            </tr>
+            <tr>
+                <td>Масса: 50 гр</td>
+                <td>Масса: 700 гр</td>
+
+            </tr>
+            <tr>
+                <td>Стоимость 250 руб</td>
+                <td>Стоимость 3500 руб</td>
+            </tr>
+        </table>
+
+        <!-- Акрилайт -->
+        <p class="zgi">Логотим ЦМИТ "Акрилайт"</p>
+        <p class="images">
+            <img class="akry_img" src="./img/akry.png">
+        </p>
+        <p class="texti">
+            3D печать VolgoBot FFF1.4, гравировка оргстекла Roland Modela MDX-40A<br>
+            Высота слоя печати: 0.2 мм<br>
+            Качество фрезеровки: отличное (фреза 1 мм)<br>
+            Размер: 185х85х210 мм<br>
+            Масса: 500 гр<br>
+            Изделие состоит из рамки - 3Д печати, фрезерной обработки или гравировке логотипа и электроной начинки. Все
+            модели разработаны сотрудниками центра.<br>
+
+        </p>
+
+        <!-- Волгоград Арена -->
+        <p class="zgi">"Волгоград" Арена</p>
+        <p class="images">
+            <img class="arena_img" src="./img/stadium.png">
+            <img class="arena_img2" src="./img/stadium2.png">
+        </p>
+        <p class="texti">
+            Высота слоя: 0.1 мм<br>
+            Размер: 100х100х30 мм (малый)<br>
+            Масса: 200 гр<br>
+            Модель стадиона разработана сотрудниками центра
+        </p>
+
+        <!-- Награда -->
+        <p class="zgi">Награды "Имидж Волгограда"</p>
+        <p class="images">
+            <img class="award_img" src="./img/award.png">
+        </p>
+        <p class="texti">
+            Печать на 3d принтере VolgoBot FFF1.4<br>
+            Размер: 100х100х100 мм<br>
+            Масса: 50 гр<br>
+            Стоимость 1200 рублей за шт.
+
+        </p>
+
+
+        <!-- Бюст -->
+        <p class="zgi">Бюст мальчика</p>
+        <p class="images">
+            <img class="boy2_img2" src="./img/boy2.png">
+        </p>
+        <p class="texti">
+            Представлен бюст, ширина 350 мм, высота 300 мм. Стоимость печати 20 тыс.
+            Сканирование и постобработка модели 2000 руб.
+        </p>
+
+        <!-- Передача -->
+        <p class="zgi">Червячная передача</p>
+        <p class="images">
+            <img class="per_img" src="./img/chery.png">
+            <img class="per_img2" src="./img/chery2.png">
+            <img class="per_img3" src="./img/chery3.png">
+        </p>
+        <p class="texti">
+            Представлен бюст, ширина 350 мм, высота 300 мм. Стоимость печати 20 тыс.
+            Сканирование и постобработка модели 2000 руб.
+        </p>
+
+        <!-- Реверсинжиринг -->
+        <p class="zgi">Реверсинжиниринг</p>
+        <p class="images">
+            <img class="rev_img" src="./img/reverse.png">
+            <img class="rev_img2" src="./img/reverse2.png">
+            <img class="rev_img3" src="./img/reverse3.png">
+        </p>
+        <p class="texti">
+            Стоимость разработки червячной передачи включая разработку модели и печать - 750 руб.
+        </p>
+
+
+    </div>
+</div>
+<div class="basement" id="basement">
+    <div class="container">
+        <h1> Остались вопросы? - Свяжись с нами: </h1>
+        <div class="contact">
+            <p>Телефон: 8 (8442) 24-84-92</p>
+            <p> Email: <a href="mailto:cmit.lux.volgograd@gmail.com">cmit.lux.volgograd@gmail.com</a></p>
+            <p> Адресс: просп. имени В.И. Ленина, 28А, высотный корпус (В), 14 этаж, ауд 1402-2 </p>
+            <p>понедельник - четверг: 12:00 - 19:00<br>
+                пятница: открытый день с 17:00 - 19:00 (рекомендуется для первого посещения). Вы можете
+                познакомиться с
+                ЦМИТом и его коллективом, обсудить идеи своих проектов.<br>
+                суббота - воскресенье: 13:00 - 18:00
+            </p>
+            <p class="linkvk"><a href="https://vk.com/cmit_lux"><img src="./img/vk.png"></a>
+            <p>
+
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A39d3c0c523eeff4cf91e595ec7116ca559b5893190e8c945fe614ba25ee67d08&amp;source=constructor"
+                        width="1000" height="450" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+</body>
+</html>
