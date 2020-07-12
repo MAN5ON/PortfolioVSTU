@@ -17,6 +17,15 @@ a {
     color: #2a323b !important;
 }
 
+.kurs {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 24px;
+}
+
 .uslugi {
     text-align: center;
     font-size: 44px;
