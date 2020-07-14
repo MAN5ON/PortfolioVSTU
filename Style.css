@@ -158,11 +158,11 @@ canvas {
 }
 
 .house_img1, .house_img2 {
-    height: 800px;
+    width: 600px;
 }
 
 .frog1, .frog2 {
-    height: 420px;
+    width: 600px;
 }
 
 .skull_img {
@@ -174,7 +174,7 @@ canvas {
 }
 
 .arena_img, .arena_img2 {
-    height: 530px;
+    width: 600px;
 }
 
 .award_img {
